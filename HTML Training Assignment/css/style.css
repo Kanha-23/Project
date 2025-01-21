@@ -1,0 +1,30 @@
+.image{
+    float: left;
+    width: 450px;
+    height: 450px;
+    border: 15px solid rgb(255, 255, 255);
+    border-radius: 50%; 
+    object-fit: cover; 
+    
+}
+
+.leftdiv{
+    width: 50%;
+    height: 100vh;
+    float: left;
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Horizontal centering */
+    align-items: center;/* Vertical centering */
+    
+}
+
+.login{
+    border: 4px solid black;
+    width: 50%;
+    height: 100vh;
+    float: right;
+}
+
+body{
+    background-color: #fafafa;
+}
