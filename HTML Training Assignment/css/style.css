@@ -1,10 +1,11 @@
 .image{
     float: left;
-    width: 450px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
     border: 15px solid rgb(255, 255, 255);
     border-radius: 50%; 
     object-fit: cover; 
+    box-shadow: 0px 4px 31px #0000000A;
     
 }
 
@@ -19,12 +20,106 @@
 }
 
 .login{
-    border: 4px solid black;
-    width: 50%;
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+    justify-content: center;
     height: 100vh;
-    float: right;
+    
+    
+}
+
+.lable1 {
+    color: #555;
+    font-size: 40px;
+   
+}
+
+.lable1 b{
+    color: #C8242F; 
+}
+
+.form1 input{
+    margin-block: 10px;
+    text-align: left;
+    width: 400px;
+    
+}
+
+.lable1{
+    
 }
 
 body{
     background-color: #fafafa;
 }
+
+.nav{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    
+}
+
+.navdiv1{
+display: flex;
+}
+
+.navdiv2{
+    display: flex;
+    position: absolute;
+    left: 20px;
+
+}
+
+.navdiv3{
+
+}
+
+.navdiv4{
+
+}
+
+.navdiv img{
+    height: 20px;
+}
+
+.sidebar{
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    background-color: white;
+    top: 60px;
+}
+
+.holder{
+    height: 100%;
+    background-color: rgb(81, 137, 201);
+    
+}
+
+ul{
+    list-style-type: none;
+    padding: 20px;
+  
+    
+}
+
+ul li{
+    padding-block: 15px;
+   
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.svgs{
+    height: 30px;
+    width: 30px;
+    padding-block: 1px;
+    padding-right: 6px;
+    
+}
+
