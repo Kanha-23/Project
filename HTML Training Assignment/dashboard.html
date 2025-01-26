@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Responsive Dashboard</title>
+</head>
+
+<body>
+    <nav class="nav navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+                aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navdiv2">
+                <img src="images/logo.svg" alt="Logo">
+            </div>
+            <div class="search">
+                <div class="navdiv3">
+                    <img src="images/search-icon.svg" alt="Search Icon">
+                </div>
+                <div class="navdiv4">
+                    <span>Search</span>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center">
+
+                <div class="navdiv5">
+                    <img src="images/notification-icon.svg" alt="Notifications">
+                </div>
+                <div class="navdiv6">
+                    <img src="images/profile.png" alt="Profile">
+                </div>
+                <div class="navdiv7">
+                    <span>John Doe</span>
+                </div>
+                <div class="navdiv8">
+                    <img src="images/downward-arrow.svg" alt="Dropdown">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="holder d-flex">
+        <!-- Sidebar -->
+        <div class="collapse d-lg-block" id="sidebarMenu">
+            <aside class="sidebar bg-light border-end vh-100" style="width: 250px;">
+                <ul class="list-unstyled">
+                    <li class="activeLinks"><a href="" class="d-flex align-items-center py-2 px-3 activeLinks"><img src="images/dashboard-active.svg"
+                                alt="" class="svgs me-2"> Dashboard</a></li>
+                    <li><a href="innerpage.html" class="d-flex align-items-center py-2 px-3"><img src="images/graph-default.svg"
+                                alt="" class="svgs me-2"> Analysis</a></li>
+                    <li><a href="" class="d-flex align-items-center py-2 px-3"><img src="images/inbox-default.svg"
+                                alt="" class="svgs me-2"> Inbox</a></li>
+                    <li><a href="" class="d-flex align-items-center py-2 px-3"><img src="images/clock-default.svg"
+                                alt="" class="svgs me-2"> History</a></li>
+                    <li><a href="" class="d-flex align-items-center py-2 px-3"><img src="images/user-default.svg" alt=""
+                                class="svgs me-2"> User</a></li>
+                    <li><a href="" class="d-flex align-items-center py-2 px-3"><img src="images/maintenance-default.svg"
+                                alt="" class="svgs me-2"> Maintenance</a></li>
+                    <li><a href="" class="d-flex align-items-center py-2 px-3"><img src="images/setting-default.svg"
+                                alt="" class="svgs me-2"> Setting</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <!-- Main Section -->
+        <section class="section flex-grow-1 p-4">
+            <h2>Dashboard</h2><br>
+
+
+            <!-- Cards view section -->
+            <div class="card-cointain">
+
+                <div class="card1">
+                    <div>
+                        <img src="images/star.svg" alt="">
+                    </div>
+                    <div>
+                        <h3>23,456</h3>
+                        <span>New Products</span>
+                    </div>
+                </div>
+
+                <div class="card2">
+                    <div>
+                        <img src="images/new-product.svg" alt="">
+                    </div>
+                    <div>
+                        <h3>2345</h3>
+                        <span>Added Products</span>
+                    </div>
+
+                </div>
+
+                <div class="card3">
+                    <div>
+                        <img src="images/new-product.svg" alt="">
+                    </div>
+                    <div>
+                        <h3>32,456</h3>
+                        <span>Total Products</span>
+                    </div>
+
+                </div>
+
+                <div class="card4">
+                    <div>
+                        <img src="images/dollar-filled.svg" alt="">
+                    </div>
+                    <div>
+                        <h3>5678</h3>
+                        <span>Today's Sale</span>
+                    </div>
+
+                </div>
+
+                <div class="card5">
+                    <div>
+                        <img src="images/money-bag.svg" alt="">
+                    </div>
+                    <div>
+                        <h3>3,35,342</h3>
+                        <span>Total Sale</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- garphs setion -->
+            <div class="graphs-container">
+                <div class="line-chart">
+                    <span><b>Sales</b></span><br>
+                    <div class="graph-details">
+                        <a href="">Weekly</a>
+                        <a href="">Monthly</a>
+                        <a href="">Yearly</a>
+                    </div>
+                    <img src="images/data-graph.png" alt="">
+                </div>
+                <div class="pie-chart">
+                    <span><b>Sales By Country</b></span><br>
+                    <img src="images/pie-chart.svg" alt="Pie Chart">
+
+                    <div class="container">
+
+                        <div class="circleleft">
+                            <div class="item">
+                                <div class="circle usa"></div>
+                                <span>United States of America</span>
+                            </div>
+                            <div class="item">
+                                <div class="circle canada"></div>
+                                <span>Canada</span>
+                            </div>
+                        </div>
+                        <div class="circleright">
+                        <div class="item">
+                            <div class="circle russia"></div>
+                            <span>Russia</span>
+                        </div>
+                        <div class="item">
+                            <div class="circle india"></div>
+                            <span>India</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="table-responsive">
+                
+                <table class="table" >
+                    <tr>
+                        <th class="tablehead" colspan="5">Invoices</th>
+                        <th class="viewAll">View All</th>
+                    </tr>
+                  <tr>
+                    <th>INVOCE</th>
+                    <th>COMPANY NAME</th>
+                    <th>EMAIL</th>
+                    <th>DUE DATE</th>
+                    <th>STATUS</th>
+                    <th>AMOUNT</th>
+                  </tr>
+
+                  <tr>
+                    <td>234567</td>
+                    <td>Company1</td>
+                    <td>xyz@gmailcom</td>
+                    <td>23 May, 2025</td>
+                    <td><span class="badge text-bg-success">Paid</span></td>
+                    <td>$23456</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>134367</td>
+                    <td>Company2</td>
+                    <td>abz@gmailcom</td>
+                    <td>26 March, 2025</td>
+                    <td><span class="badge text-bg-success">Paid</span></td>
+                    <td>$23156</td>
+                  </tr>
+
+                  <tr>
+                    <td>832367</td>
+                    <td>Company3</td>
+                    <td>pqz@gmailcom</td>
+                    <td>16 March, 2025</td>
+                    <td><span class="badge text-bg-success">Paid</span></td>
+                    <td>$23450</td>
+                  </tr>
+
+                  <tr>
+                    <td>038367</td>
+                    <td>Company4</td>
+                    <td>ghz@gmailcom</td>
+                    <td>6 June, 2025</td>
+                    <td><span class="badge text-bg-fail ">Failed</span></td>
+                    <td>$23256</td>
+                  </tr>
+
+                  <tr>
+                    <td>62367</td>
+                    <td>Company5</td>
+                    <td>abc@gmailcom</td>
+                    <td>7 July, 2025</td>
+                    <td><span class="badge text-bg-success">Paid</span></td>
+                    <td>$23886</td>
+                  </tr>
+
+                  <tr>
+                    <td>974367</td>
+                    <td>Company6</td>
+                    <td>hij@gmailcom</td>
+                    <td>30 March, 2025</td>
+                    <td><span class="badge text-bg-success">Paid</span></td>
+                    <td>$11456</td>
+                  </tr>
+
+                  <tr>
+                    <td>111367</td>
+                    <td>Company7</td>
+                    <td>rts@gmailcom</td>
+                    <td>20 March, 2025</td>
+                    <td><span class="badge text-bg-fail ">Failed</span></td>
+                    <td>$91456</td>
+                  </tr>
+
+                  <tr>
+                    <td>974367</td>
+                    <td>Company8</td>
+                    <td>hab@gmailcom</td>
+                    <td>9 August, 2025</td>
+                    <td><span class="badge text-bg-success">Paid</span></td>
+                    <td>$671356</td>
+                  </tr>
+
+                  <tr>
+                    <td>974367</td>
+                    <td>Company9</td>
+                    <td>hij@gmailcom</td>
+                    <td>30 March, 2025</td>
+                    <td><span class="badge text-bg-fail ">Failed</span></td>
+                    <td>$11456</td>
+                  </tr>
+
+                </table>
+              </div>
+
+        </section>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Inner Page</title>
+</head>
+
+<body>
+    <nav class="nav navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+                aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navdiv2">
+                <img src="images/logo.svg" alt="Logo">
+            </div>
+            <div class="search">
+                <div class="navdiv3">
+                    <img src="images/search-icon.svg" alt="Search Icon">
+                </div>
+                <div class="navdiv4">
+                    <span>Search</span>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center">
+
+                <div class="navdiv5">
+                    <img src="images/notification-icon.svg" alt="Notifications">
+                </div>
+                <div class="navdiv6">
+                    <img src="images/profile.png" alt="Profile">
+                </div>
+                <div class="navdiv7">
+                    <span>John Doe</span>
+                </div>
+                <div class="navdiv8">
+                    <img src="images/downward-arrow.svg" alt="Dropdown">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="holder d-flex">
+        <!-- Sidebar -->
+        <div class="collapse d-lg-block" id="sidebarMenu">
+            <aside class="sidebar bg-light border-end vh-100" style="width: 250px;">
+                <ul class="list-unstyled">
+                    <li><a href="dashboard.html" class="d-flex align-items-center py-2 px-3"><img
+                                src="images/dashboard-default.svg" alt="" class="svgs me-2"> Dashboard</a></li>
+                    <li class="activeLinks"><a href="" class="d-flex align-items-center py-2 px-3 activeLinks"><img
+                                src="images/graph-active.svg" alt="" class="svgs me-2"> Analysis</a></li>
+                    <li><a href="" class="d-flex align-items-center py-2 px-3"><img src="images/inbox-default.svg"
+                                alt="" class="svgs me-2"> Inbox</a></li>
+                    <li><a href="" class="d-flex align-items-center py-2 px-3"><img src="images/clock-default.svg"
+                                alt="" class="svgs me-2"> History</a></li>
+                    <li><a href="" class="d-flex align-items-center py-2 px-3"><img src="images/user-default.svg" alt=""
+                                class="svgs me-2"> User</a></li>
+                    <li><a href="" class="d-flex align-items-center py-2 px-3"><img src="images/maintenance-default.svg"
+                                alt="" class="svgs me-2"> Maintenance</a></li>
+                    <li><a href="" class="d-flex align-items-center py-2 px-3"><img src="images/setting-default.svg"
+                                alt="" class="svgs me-2"> Setting</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <!-- Main Section -->
+        <section class="section flex-grow-1 p-4">
+            <h1>Analysis</h1>
+
+            <div class="formdiv">
+                <form class="row g-3 formbg">
+                    <h1 class="formlable">One Column</h1>
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+                    </div>
+
+                    <div class="mb-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Dropdown</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Multiple lines"></textarea>
+                    </div>
+
+                    <h1 class="formlable">Two Column</h1>
+
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Name">
+                        </div>
+                        <div class="form-floating col-12 col-md-6">
+                            <input type="text" class="form-control" id="floatingPassword" placeholder="Username">
+                            <label for="floatingPassword">Username</label>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <input type="password" class="form-control" id="inputCity" placeholder="Password">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <select id="inputState" class="form-select">
+                                <option selected>Dropdown</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h1 class="formlable">Three Column</h1>
+
+                    <div class="row mb-3">
+                        <div class="form-floating col-12 col-md-4">
+                            <input type="text" class="form-control" id="floatingPassword" placeholder="Username">
+                            <label for="floatingPassword">Focus</label>
+                        </div>
+                        <div class="form-floating col-12 col-md-4">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="form-floating col-12 col-md-4">
+                            <input type="text" disabled class="form-control" id="floatingPassword"
+                                placeholder="johndoe">
+                            <label for="floatingPassword">johndoe</label>
+                        </div>
+                    </div>
+
+                    <h1 class="formlable">Four Column</h1>
+
+                    <div class="row mb-3">
+                        <div class="form-floating col-12 col-md-3">
+                            <input type="text" class="form-control is-invalid" id="validationServer04"
+                                placeholder="Username">
+                            <label for="floatingPassword">Designation</label>
+                            <div id="validationServer04Feedback" class="invalid-feedback">
+                                Enter validate data
+                            </div>
+                        </div>
+
+                        <div class="form-floating col-12 col-md-3">
+                            <input type="text" class="form-control" id="floatingPassword" placeholder="Name">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="form-floating col-12 col-md-3">
+                            <input type="text" class="form-control" id="floatingPassword" placeholder="Username">
+                            <label for="floatingPassword">Username</label>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <select id="inputState" class="form-select">
+                                <option selected>Select</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h1 class="formlable">Other Design Element</h1>
+
+                    <h5 class="formlable">File Upload</h5>
+                    <div class="upload-cloud">
+                        <button type="button" class="btn btn-outline-danger">
+                            <img src="images/cloud-upload-icon.svg" alt="">Upload
+                        </button>
+                        <span>No file have been choosen</span>
+                    </div>
+
+                    <h5 class="formlable">Radio Button</h5>
+
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="option" id="option1"> Option 1
+                        </label>
+
+                        <label>
+                            <input type="radio" name="option" id="option1"> Option 2
+                        </label>
+                    </div>
+
+                    <h5 class="formlable">Checkbox</h5>
+                    <div class="radio-group">
+                        <label>
+                            <input type="checkbox" name="option" id="option1"> Option 1
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="option" id="option1"> Option 2
+                        </label>
+                    </div>
+
+                    <h5 class="formlable me-2 Snakbar">Snakbar</h5>
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <div class="alert alert-primary d-flex align-items-center alert1" role="alert">
+                                <img src="images/error-icon.svg" alt="" height="20px" width="20px">
+                                <div>An example alert with an icon</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="alert alert-primary d-flex align-items-center alert2" role="alert">
+                                <img src="images/info-icon.svg" alt="" height="20px" width="20px">
+                                <div>An example alert with an icon</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <div class="alert alert-primary d-flex align-items-center alert3" role="alert">
+                                <img src="images/warning-icon.svg" alt="" height="20px" width="20px">
+                                <div>An example alert with an icon</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="alert alert-primary d-flex align-items-center alert4" role="alert">
+                                <img src="images/success-icon.svg" alt="" height="20px" width="20px">
+                                <div>An example alert with an icon</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="formlable me-2">Call to action</h5>
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group me-2" role="group" aria-label="First group">
+                            <button type="button" class="btn btn-primary primary">Primary</button>
+                        </div>
+                        <div class="btn-group me-2" role="group" aria-label="Second group">
+                            <button type="button" class="btn btn-secondary secondary">Secondary</button>
+                        </div>
+                    </div>
+
+                    <h5 class="formlable">Tabs</h5>
+                    <ul class="tab nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s... Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Consectetur maiores odit nisi ratione quae minima ipsum
+                        necessitatibus illo! Fugit possimus architecto consequatur doloribus similique nostrum atque
+                        quibusdam. Delectus, rem temporibus.</p>
+                </form>
+
+            </div>
+        </section>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
